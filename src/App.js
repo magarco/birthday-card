@@ -1,5 +1,4 @@
 import "./App.css";
-import YoutubeEmbed from "./YoutubeEmbed";
 import present from "./present.png";
 import cuffs from "./cuffs.png";
 import book from "./book.jpg";
@@ -41,6 +40,7 @@ function App() {
       {showBook && (
         <>
           <img
+            alt="book"
             src={book}
             style={{ cursor: "pointer", maxWidth: "30vw" }}
             onClick={() => setShowBook(false)}
@@ -57,6 +57,7 @@ function App() {
       )}
       {!showBook && (
         <img
+          alt="present"
           onClick={() => setShowBook(true)}
           src={present}
           style={{ cursor: "pointer", maxWidth: "30vw" }}
@@ -71,6 +72,7 @@ function App() {
       {showCuffs && (
         <>
           <img
+            alt="cuffs"
             src={cuffs}
             style={{ cursor: "pointer", maxWidth: "30vw" }}
             onClick={() => setShowCuffs(false)}
@@ -80,6 +82,7 @@ function App() {
       )}
       {!showCuffs && (
         <img
+          alt="present"
           onClick={() => setShowCuffs(true)}
           src={present}
           style={{ cursor: "pointer", maxWidth: "30vw" }}
