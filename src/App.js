@@ -46,11 +46,10 @@ function App() {
             onClick={() => setShowBook(false)}
           />
           <br />
-          <button
-            style={{ cursor: "pointer", maxWidth: "30vw" }}
-            href="https://www.amazon.co.uk/kindle/redeem/?t=GSZYV84QPD9PT3B"
-          >
-            Click to redeem
+          <button style={{ cursor: "pointer", maxWidth: "30vw" }}>
+            <a href="https://www.amazon.co.uk/kindle/redeem/?t=GSZYV84QPD9PT3B">
+              Click to redeem
+            </a>
           </button>
           <br />
         </>
